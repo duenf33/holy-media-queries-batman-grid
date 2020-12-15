@@ -40,3 +40,32 @@
   grid-area: ftr;
   background-color: #f08a4b;
 }
+
+@media(max-width: 700px){
+  #app {
+  font-size: 4em;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 10% 55% 15%;
+  grid-template-areas:
+  "hdr"
+  "nav"
+  "art"
+  "ads"
+  "ftr"
+  ;
+  }
+}
+
+@media(min-width: 701px) and (max-width: 1100px){
+  #app {
+  font-size: 4em;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 10% 50% 10% 10% ;
+  grid-template-areas:
+  "hdr hdr"
+  "nav nav"
+  "art ads"
+  "ftr ftr"
+  ;
+  }
+}
